@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="dist/reveal.css">
     <link rel="stylesheet" href="dist/theme/dracula.css">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/plugin/print-pdf/print-pdf.css" media="print">
+
     <!-- Theme used for syntax highlighted code -->
     <link rel="stylesheet" href="plugin/highlight/monokai.css">
 </head>
@@ -37,6 +39,53 @@
                 <h2>2nd Page of slide-2</h2>
             </section>
         </section>
+
+        <!-- section for slide 3-->
+        <section>
+            <h2>No order List</h2>
+            <ul>
+                <li>Item 1: some long text</li>
+                <li>Item 2: some other text</li>
+                <li>Item 3: some other texts</li>
+                <li>Item 4: some other texts</li>
+            </ul>
+        </section>
+
+        <!-- section for slide 4-->
+        <section>
+            <h2>Fantastic Ordered List</h2>
+            <ol>
+                <li>One is smaller than...</li>
+                <li>Two is smaller than...</li>
+                <li>Three!</li>
+            </ol>
+        </section>
+        <!-- section for slide 5-->
+        <section>
+            <h2>Create a Conda Environment</h2>
+            <pre><code class="hljs powershell" data-trim data-line-numbers="2,4"><script type="text/template">
+      # create a conda environment with python 3.10
+      conda create -n myenv python=3.10
+      # activate the environment
+      conda activate myenv
+      # check the version of python in the virtual environment
+      python --version
+  </script></code></pre>
+            <p><small><em>Lines 2 and 4 are essential to create and activate the environment.</em></small></p>
+        </section>
+
+        <!-- section for slide 6-->
+        <section data-auto-animate>
+            <h2 data-id="code-title">Code with animations</h2>
+            <pre data-id="code-animation"><code class="hljs python" data-trim data-line-numbers="|1|3-4|5|"><script
+                    type="text/template">
+import matplotlib.pyplot as plt
+
+plt.plot([1,2,3], [4,5,6])
+plt.title("Basic Plot")
+plt.show()
+					</script></code></pre>
+        </section>
     </div>
 </div>
 
@@ -54,6 +103,7 @@
         // Learn about plugins: https://revealjs.com/plugins/
         plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
     });
+    Reveal.configure({ slideNumber: true })
 </script>
 </body>
 </html>
