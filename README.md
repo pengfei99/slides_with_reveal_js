@@ -269,3 +269,14 @@ To show the `presenter view`, you need to press the **s** on the keyboard.
 There will be a pop-up window in your browser that displays the presenter view.
 
 
+## 6. Publish the slides via github pages
+
+You need to create a GitHub project and push the required code to the GitHub project.
+Open your GitHub project, click on the tab **Settings** → **Pages**.
+
+Then in **Source** row, choose **main branch, / (root)**
+
+Save the changes, you will get a URL like: `https://<username>.github.io/python-conda-slides/`
+
+> If you have a custom url, you can set up a redirection rule in the same tab.
+
